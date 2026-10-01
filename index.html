@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="WDD 231 course home page for Marjorie Omojeminiyi, featuring coursework, projects, and web development information.">
+
+  <meta
+    name="author"
+    content="Marjorie Omojeminiyi">
+
+  <title>WDD 231 | Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img
+        src="images/logo.svg"
+        alt="WDD 231 logo"
+        width="60"
+        height="60">
+
+      <span>Marjorie Omojeminiyi</span>
+
+      <button
+        id="menu"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="final/index.html">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="home-grid">
+
+      <section class="about">
+        <h2>About Me</h2>
+
+        <p>
+          My name is Marjorie Omojeminiyi. I'm currently studying web development
+          and working toward improving my skills in HTML, CSS, and JavaScript. Oh, and also Python
+          I like learning how websites are developed and look
+          forward to building useful technologies. <br> <br> (Don't know what else to write, so I'll use lorem ipsum to fill up space.)
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum, ex eu semper ultrices, purus sapien luctus arcu, a aliquet eros est in nisi.
+          Ut non iaculis ex. Integer varius tempus massa, vel condimentum leo placerat ac. Sed gravida lacus et erat tincidunt tincidunt. In et ante nunc.
+          Nullam id lobortis nisl. Donec efficitur mauris non convallis semper. Praesent bibendum condimentum augue non sollicitudin. Sed et arcu erat.
+          Proin bibendum justo lacus, a sollicitudin neque accumsan at. Nulla molestie, nibh eu porta vestibulum, quam massa efficitur massa, in semper nisl nunc et ligula.
+          Donec eget finibus lacus. Proin bibendum justo lacus, a sollicitudin neque accumsan at. Nulla molestie, nibh eu porta vestibulum, quam massa efficitur massa,
+          in semper nisl nunc et ligula. Donec eget finibus lacus. Proin bibendum justo lacus, a sollicitudin neque accumsan at. Nulla molestie, nibh eu porta vestibulum, quam massa efficitur massa,
+          in semper nisl nunc et ligula. Donec eget finibus lacus. 
+        </p>
+      </section>
+
+      <section class="student-photo">
+        <h2>Student Photo</h2>
+
+        <img
+          src="images/profile.png"
+          alt="Photo of me, Marjorie"
+          width="400"
+          height="400">
+      </section>
+
+      <section class="certificate">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="course-filters">
+          <button id="all">All Courses</button>
+          <button id="wdd">WDD Courses</button>
+          <button id="cse">CSE Courses</button>
+        </div>
+
+        <p class="credits">
+          Total Credits:
+          <span id="totalCredits">0</span>
+        </p>
+
+        <div id="course-list"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a
+        href="https://github.com/oriee1"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub">
+        GitHub
+      </a>
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        LinkedIn
+      </a>
+
+      <a
+        href="#"
+        aria-label="Social media">
+        Social
+      </a>
+    </div>
+
+    <p>
+      &copy; <span id="currentyear"></span>
+      Marjorie Omojeminiyi
+      | Abuja, Nigeria
+    </p>
+  </footer>
+
+</body>
+</html>

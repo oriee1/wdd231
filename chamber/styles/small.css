@@ -1,0 +1,578 @@
+:root {
+    --primary-color: #006b3f;
+    --secondary-color: #f4b400;
+    --background-color: #f5f7f6;
+    --card-color: #ffffff;
+    --text-color: #1f2933;
+    --white: #ffffff;
+    --border-color: #d8dee3;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.brand img {
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.menu-button {
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #005531;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--secondary-color);
+    color: #111;
+}
+
+main {
+    width: min(92%, 1200px);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.view-button {
+    border: 2px solid var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-button:hover,
+.view-button.active-view {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.member-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member-card img {
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.member-card h2 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.member-list .member-card {
+    border-radius: 0;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    align-items: center;
+}
+
+.member-list .member-card img {
+    display: none;
+}
+
+.member-list .member-card h2 {
+    margin: 0;
+}
+
+.member-list .member-card p {
+    margin: 0.2rem 0;
+}
+
+.site-footer {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #123b2a;
+    color: var(--white);
+    text-align: center;
+}
+
+.site-footer h2 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.error-message {
+    text-align: center;
+    color: #a30000;
+    font-weight: 600;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    background: rgba(0, 50, 30, 0.55);
+}
+
+.hero-content h1 {
+    color: var(--white);
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+}
+
+.hero-content p {
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: var(--white);
+}
+
+.home-sections {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.events,
+.weather,
+.spotlights {
+    background-color: var(--white);
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.event-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.event-card:last-child {
+    margin-bottom: 0;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+#weather-description {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.forecast-card {
+    padding: 0.75rem;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.forecast-card h4 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.forecast-card p {
+    margin: 0.25rem 0;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.spotlight-card img {
+    width: 160px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.spotlight-card h3 {
+    color: var(--primary-color);
+}
+
+.spotlight-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* =========================
+   JOIN PAGE
+========================= */
+
+.join-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.application-section,
+.membership-options,
+.thankyou-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.membership-form > label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.membership-form input:focus,
+.membership-form textarea:focus {
+    outline: 3px solid rgba(244, 180, 0, 0.4);
+    border-color: var(--primary-color);
+}
+
+.membership-form fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.membership-form fieldset label {
+    display: block;
+    margin: 0.75rem 0;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.25rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardEntrance 0.7s ease forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.membership-card h3 {
+    color: var(--primary-color);
+}
+
+.np-card {
+    border-top: 5px solid #555;
+}
+
+.bronze-card {
+    border-top: 5px solid #a97142;
+}
+
+.silver-card {
+    border-top: 5px solid #777;
+}
+
+.gold-card {
+    border-top: 5px solid #d49b00;
+}
+
+.info-button {
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info-button:hover,
+.info-button:focus {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-modal {
+    width: min(90%, 550px);
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hidden-timestamp {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.thankyou-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thankyou-card {
+    text-align: center;
+}
+
+.application-information {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-left: 4px solid var(--secondary-color);
+    text-align: left;
+}

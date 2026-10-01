@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Abuja Chamber of Commerce. Discover local businesses, upcoming events, community information, and opportunities to connect with Abuja businesses.">
+    <meta name="author" content="Marjorie Omojeminiyi">
+    <meta property="og:title" content="Abuja Chamber of Commerce">
+    <meta property="og:description" content="Connect with businesses and discover opportunities in Abuja.">
+    <meta property="og:image" content="https://oriee1.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://oriee1.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <title>Abuja Chamber of Commerce | Home</title>
+
+    <link rel="icon" href="images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-content">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="Abuja Chamber of Commerce logo" width="60" height="60">
+            <span>
+                Abuja Chamber of Commerce
+            </span>
+        </a>
+        <button
+            id="menu"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+    </div>
+    <nav id="navigation" class="navigation">
+        <a href="index.html" class="active"> Home </a>
+        <a href="directory.html"> Directory </a>
+        <a href="discover.html"> Discover </a>
+        <a href="join.html"> Join </a>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <img src="images/hero.png" alt="Abuja city skyline" width="1200" height="600">
+        <div class="hero-content">
+            <h1> Grow Your Business in Abuja </h1>
+            <p>
+                Connect with local businesses, discover opportunities,
+                and be part of Abuja's growing business community.
+            </p>
+            <a class="hero-button" href="join.html"> Join the Chamber </a>
+        </div>
+    </section>
+
+    <div class="home-sections">
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <article class="event-card">
+                <h3>Business Networking Meetup</h3>
+                <p>
+                    Meet local entrepreneurs and business professionals
+                    and build valuable connections.
+                </p>
+                <p>
+                    <strong>Date:</strong>
+                    October 15, 2026
+                </p>
+                <p>
+                    <strong>Location:</strong>
+                    Abuja Business Center
+                </p>
+            </article>
+            <article class="event-card">
+                <h3>Small Business Workshop</h3>
+                <p>
+                    Learn practical strategies for growing and managing
+                    a successful small business.
+                </p>
+                <p>
+                    <strong>Date:</strong>
+                    October 28, 2026
+                </p>
+                <p>
+                    <strong>Location:</strong>
+                    Wuse Business District
+                </p>
+            </article>
+        </section>
+
+        <section class="weather">
+            <h2>Abuja Weather</h2>
+            <div class="current-weather">
+                <div>
+                    <p class="temperature">
+                        <span id="temperature">--</span>°C
+                    </p>
+                    <p id="weather-description">
+                        Loading weather...
+                    </p>
+                </div>
+            </div>
+            <h3>Three-Day Forecast</h3>
+            <div
+                id="forecast"
+                class="forecast">
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div
+                id="spotlight-container"
+                class="spotlight-grid">
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-contact">
+        <h2>Abuja Chamber of Commerce</h2>
+        <p>
+            Central Business District
+        </p>
+        <p>
+            Abuja, Nigeria
+        </p>
+        <p>
+            Email: info@abujachamber.example
+        </p>
+        <p>
+            Phone: +234 800 000 0000
+        </p>
+    </div>
+    <div class="footer-development">
+        <p>
+            Marjorie Omojeminiyi | WDD 231
+        </p>
+        <p>
+            ©
+            <span id="currentyear"></span>
+            Abuja Chamber of Commerce
+        </p>
+    </div>
+</footer>
+</body>
+</html>

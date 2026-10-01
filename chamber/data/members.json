@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Abuja Tech Solutions",
+        "address": "12 Garki Area 2, Abuja, Nigeria",
+        "phone": "+234 800 123 4567",
+        "website": "https://example.com",
+        "image": "abuja-tech.webp",
+        "membership": 3,
+        "description": "A technology company providing digital solutions and IT services to businesses in Abuja."
+    },
+    {
+        "name": "Capital Heights Consulting",
+        "address": "25 Wuse 2, Abuja, Nigeria",
+        "phone": "+234 800 234 5678",
+        "website": "https://example.com",
+        "image": "capital-heights.webp",
+        "membership": 2,
+        "description": "A business consulting firm supporting entrepreneurs and growing companies."
+    },
+    {
+        "name": "Abuja Fresh Market",
+        "address": "18 Garki Market, Abuja, Nigeria",
+        "phone": "+234 800 345 6789",
+        "website": "https://example.com",
+        "image": "abuja-fresh.webp",
+        "membership": 1,
+        "description": "A local market providing fresh food and products to the Abuja community."
+    },
+    {
+        "name": "Greenview Properties",
+        "address": "8 Jabi Lake Road, Abuja, Nigeria",
+        "phone": "+234 800 456 7890",
+        "website": "https://example.com",
+        "image": "greenview.webp",
+        "membership": 3,
+        "description": "A property company specializing in residential and commercial real estate."
+    },
+    {
+        "name": "FCT Digital Services",
+        "address": "31 Maitama Avenue, Abuja, Nigeria",
+        "phone": "+234 800 567 8901",
+        "website": "https://example.com",
+        "image": "fct-digital.webp",
+        "membership": 2,
+        "description": "A digital services company helping organizations improve their online presence."
+    },
+    {
+        "name": "Abuja Creative Hub",
+        "address": "14 Wuse 1, Abuja, Nigeria",
+        "phone": "+234 800 678 9012",
+        "website": "https://example.com",
+        "image": "creative-hub.webp",
+        "membership": 1,
+        "description": "A creative community supporting designers, artists, and digital creators."
+    },
+    {
+        "name": "Millennium Business Center",
+        "address": "5 Central Business District, Abuja, Nigeria",
+        "phone": "+234 800 789 0123",
+        "website": "https://example.com",
+        "image": "millennium.webp",
+        "membership": 3,
+        "description": "A business center offering professional workspace and business services."
+    }
+]
